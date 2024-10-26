@@ -1,0 +1,76 @@
+/* Center the container div in the middle of the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the joke */
+div {
+  padding: 40px;
+  width: 90%;
+  max-width: 700px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Styling for the joke question */
+div p:first-child {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Styling for the joke answer */
+div p:nth-child(2) {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* Hover effect for the div */
+div:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 768px) {
+  div {
+    padding: 30px; /* Reduce padding */
+    width: 85%; /* Slightly reduce width */
+  }
+
+  div p:first-child {
+    font-size: 1.3em;
+  }
+
+  div p:nth-child(2) {
+    font-size: 1em;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+  div {
+    padding: 20px; /* Further reduce padding */
+    width: 95%; /* Full width on very small screens */
+  }
+
+  div p:first-child {
+    font-size: 1.2em;
+  }
+
+  div p:nth-child(2) {
+    font-size: 0.95em;
+  }
+}
